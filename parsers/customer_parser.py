@@ -38,7 +38,7 @@ class RblCustomerParser(CustomerParser):
         account = ""
         address_lines = []
 
-        for i, line in enumerate(lines):
+        for line in lines:
 
             # 1. Name detection (structure-based, not content-based)
             if not name and re.match(r"^[A-Z][a-z]+(\s[A-Z][a-z]+)+$", line):
